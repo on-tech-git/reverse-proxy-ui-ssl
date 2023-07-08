@@ -1,4 +1,8 @@
 #!/bin/bash
+systemctl stop apache2; sudo apt-get update 
+apt-get install -y curl git 
+curl -fsSL https://get.docker.com -o get-docker.sh 
+sh ./get-docker.sh 
 mkdir db
 mkdir certs
 chown -R 33:33 ./db
